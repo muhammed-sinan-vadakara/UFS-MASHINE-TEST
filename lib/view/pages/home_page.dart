@@ -21,21 +21,21 @@ class HomePage extends ConsumerWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            StackCondainerWidget(),
+            const StackCondainerWidget(),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  GapWidget.h24(),
+                  const GapWidget.h24(),
                   Text(
                     constants.txtSubHeading,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w600,
-                        color: const Color.fromARGB(225, 0, 0, 0)),
+                        color: Color.fromARGB(225, 0, 0, 0)),
                   ),
-                  GapWidget.h8(),
+                  const GapWidget.h8(),
                   Container(
                     width: screenwidth,
                     height: 100,
@@ -46,12 +46,12 @@ class HomePage extends ConsumerWidget {
                             style: BorderStyle.solid),
                         borderRadius: BorderRadius.circular(16)),
                   ),
-                  GapWidget.h24(),
+                  const GapWidget.h24(),
                   Container(
                     width: screenwidth,
                     height: 50,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 27, 132, 218),
+                        color: const Color.fromARGB(255, 27, 132, 218),
                         border: Border.all(
                             width: 1,
                             color: const Color.fromARGB(103, 0, 0, 0),
@@ -61,13 +61,13 @@ class HomePage extends ConsumerWidget {
                         onPressed: () {},
                         child: Text(
                           constants.txtbutton,
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w600,
                               color: Colors.white),
                         )),
                   ),
-                  GapWidget.h24(),
+                  const GapWidget.h24(),
                   Container(
                     width: screenwidth,
                     height: 120,
@@ -78,13 +78,13 @@ class HomePage extends ConsumerWidget {
                             style: BorderStyle.solid),
                         borderRadius: BorderRadius.circular(16)),
                   ),
-                  GapWidget.h24(),
+                  const GapWidget.h24(),
                   Text(
                     constants.txtmockTest,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w600,
-                        color: const Color.fromARGB(225, 0, 0, 0)),
+                        color: Color.fromARGB(225, 0, 0, 0)),
                   ),
                   Row(
                     children: [
@@ -101,7 +101,7 @@ class HomePage extends ConsumerWidget {
                             )),
                         name: constants.txtreading,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 16,
                       ),
                       MockTestWidgets(
@@ -119,7 +119,7 @@ class HomePage extends ConsumerWidget {
                       ),
                     ],
                   ),
-                  GapWidget.h16(),
+                  const GapWidget.h16(),
                   Row(
                     children: [
                       MockTestWidgets(
@@ -135,7 +135,7 @@ class HomePage extends ConsumerWidget {
                             )),
                         name: constants.txtwriting,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 16,
                       ),
                       MockTestWidgets(
@@ -159,7 +159,10 @@ class HomePage extends ConsumerWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBarWidget(),
+      /////
+      /////Bottom NAvigation bar
+      ///
+      bottomNavigationBar: const BottomNavigationBarWidget(),
     );
   }
 }
