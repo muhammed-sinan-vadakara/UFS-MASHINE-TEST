@@ -41,7 +41,7 @@ class HomePage extends ConsumerWidget {
                     height: 90,
                     child: Row(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           width: 4,
                         ),
                         SizedBox(
@@ -52,14 +52,14 @@ class HomePage extends ConsumerWidget {
                             fit: BoxFit.fill,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 6,
                         ),
-                        Column(
+                        const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              padding: EdgeInsets.symmetric(vertical: 8),
                               child: Text(
                                 "OET Beginner special class\nand Preparation Tips",
                                 style: TextStyle(
@@ -108,7 +108,7 @@ class HomePage extends ConsumerWidget {
                     height: 120,
                     child: Row(
                       children: [
-                        Text(" "),
+                        const Text(" "),
                         Image.asset(
                           "assets/images/find_a_mentor_img.png",
                         )
@@ -196,7 +196,7 @@ class HomePage extends ConsumerWidget {
                       ),
                     ],
                   ),
-                  GapWidget.h24(),
+                  const GapWidget.h24(),
                   Text(
                     constants.txtpopularCourse,
                     style: const TextStyle(
