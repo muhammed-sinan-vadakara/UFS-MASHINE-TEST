@@ -38,7 +38,42 @@ class HomePage extends ConsumerWidget {
                   const GapWidget.h8(),
                   Container(
                     width: screenwidth,
-                    height: 100,
+                    height: 90,
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: 4,
+                        ),
+                        SizedBox(
+                          height: 78,
+                          width: 93,
+                          child: Image.asset(
+                            "assets/images/you_tube_video_play_img.png",
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 6,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              child: Text(
+                                "OET Beginner special class\nand Preparation Tips",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w800, fontSize: 14),
+                              ),
+                            ),
+                            Text(
+                              "20:45 / 35:12",
+                              style: TextStyle(color: Colors.grey),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                     decoration: BoxDecoration(
                         border: Border.all(
                             width: 1,
@@ -160,7 +195,15 @@ class HomePage extends ConsumerWidget {
                         name: constants.txtspeaking,
                       ),
                     ],
-                  )
+                  ),
+                  GapWidget.h24(),
+                  Text(
+                    constants.txtpopularCourse,
+                    style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
+                        color: Color.fromARGB(225, 0, 0, 0)),
+                  ),
                 ],
               ),
             )

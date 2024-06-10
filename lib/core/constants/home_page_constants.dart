@@ -10,6 +10,7 @@ class HomePageConstants {
   final String txtwriting = "Writing";
   final String txtlistening = "Listening";
   final String txtspeaking = "Speaking";
+  final String txtpopularCourse = "Popular Course";
 }
 
 @riverpod
