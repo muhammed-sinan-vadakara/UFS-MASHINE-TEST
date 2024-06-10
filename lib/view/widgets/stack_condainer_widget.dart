@@ -109,7 +109,41 @@ class _StackCondainerWidgetState extends State<StackCondainerWidget> {
                 ),
               ),
             ),
-          )
+          ),
+          Positioned(
+            left: 150,
+            bottom: 50,
+            child: SizedBox(
+              child: Column(
+                children: [
+                  Text(
+                    "Hello ,I'm Breff",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Positioned(
+            left: 150,
+            bottom: 10,
+            child: SizedBox(
+              child: Column(
+                children: [
+                  Text(
+                    "Ask all your career & exam\ndoubts to me",
+                    style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );

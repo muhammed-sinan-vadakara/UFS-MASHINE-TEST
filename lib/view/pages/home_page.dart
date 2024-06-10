@@ -71,6 +71,14 @@ class HomePage extends ConsumerWidget {
                   Container(
                     width: screenwidth,
                     height: 120,
+                    child: Row(
+                      children: [
+                        Text(" "),
+                        Image.asset(
+                          "assets/images/find_a_mentor_img.png",
+                        )
+                      ],
+                    ),
                     decoration: BoxDecoration(
                         border: Border.all(
                             width: 1,
